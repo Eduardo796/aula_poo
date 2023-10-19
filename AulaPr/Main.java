@@ -6,6 +6,9 @@ public class Main {
         Pessoa p2 = new Pessoa();
         
 
+        //get pega o valor
+        //set coloca um novo valor
+
         p1.nome = "Maria";
         p1.cpf = "12342523";
 
@@ -14,9 +17,16 @@ public class Main {
 
         System.out.println(p1.nome);
         System.out.println(p1.cpf);
-        
+
         System.out.println(p2.nome);
         System.out.println(p2.cpf);
 
+    }
+
+    public static void cadastrar(String nome) {
+         getnome = "Edu";
+       
+
+        
     }
 }
