@@ -1,14 +1,29 @@
 package Java;
 
-public class Main{
+import java.util.Scanner;
+
+public class Main {
     public static void main(String[] args) {
-        Garrafa g1 = new Garrafa();
-        g1.carga = 80;
-        g1.cor = "Transparente";
-        g1.marca = "Hostnet";
-        g1.tamanho = 20;
-        g1.status();
-        g1.Destampar();
-        g1.TomarAgua();
+        Scanner sc = new Scanner (System.in);
+        Carro c1 = new Carro();
+
+        System.out.println("### CADASTRO DE CARRO ###");
+
+        System.out.println("Digite a marca: ");
+        c1.setMarca(sc.next());
+
+        System.out.println("Digite a modelo: ");
+        c1.setModelo(sc.next());
+        
+        System.out.println("Digite a cor: ");
+        c1.setCor(sc.next());
+
+        System.out.println("Digite a ano: ");
+        c1.setAno(sc.nextInt());
+
+        System.out.println("Digite a preço: ");
+        c1.setPreço(sc.nextDouble());
+
+        
     }
 }
